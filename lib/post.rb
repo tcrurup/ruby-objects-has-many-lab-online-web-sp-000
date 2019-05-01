@@ -13,8 +13,11 @@ class Post
   end
   
   def author_name
-    binding.pry 
-    self.author.name
+    if self.author.nil?
+      nil
+    else
+      self.author.name
+    end
   end
   
   def self.all 
