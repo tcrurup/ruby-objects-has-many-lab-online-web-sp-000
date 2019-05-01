@@ -9,4 +9,8 @@ class Post
     @title = post_title
     @@all << self
   end
+  
+  def self.all 
+    @@all
+  end
 end
