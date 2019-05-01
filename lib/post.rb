@@ -1,3 +1,5 @@
+require 'pry'
+
 class Post 
   
   attr_reader :title
@@ -11,6 +13,7 @@ class Post
   end
   
   def author_name
+    binding.pry 
     self.author.name
   end
   
